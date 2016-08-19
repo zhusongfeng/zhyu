@@ -1,3 +1,6 @@
+var scroll=document.documentElement.scrollTop||document.body.scrollTop;//滚动的距离
+var win=document.documentElement.clientHeight||document.body.clientHeight;//窗口的高度
+var scrollHeight=document.documentElement.scrollHeight||document.body.scrollHeight;//文档总高度
 //->REM
 ~function (desW) {
     var winW = document.documentElement.clientWidth,
@@ -9,7 +12,6 @@
         return;
     }
     document.documentElement.style.fontSize = n * 100 + "px";
-
 }(640);
 
 //->Swiper
